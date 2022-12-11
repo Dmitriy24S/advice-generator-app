@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  /* font-size: 28px; */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+button {
+  outline-offset: 4px;
+  /* outline-color: #00ff82; */
+  outline-color: currentColor;
+}
+
+.btn-primary {
+  /* transition: box-shadow 200ms ease; */
+  /* transition: box-shadow 200ms ease-out; */
+  transition: box-shadow 200ms ease-in;
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  /* box-shadow: 0 0 0 5px rgba(#000, 0.4), 0 0 0 10px #f05f75; */
+  /* box-shadow: 0px 0px 0px 5px rgba(rgb(139, 30, 30), 0.4); */
+  box-shadow: 0px 0px 20px 3px #00ff82;
+}
